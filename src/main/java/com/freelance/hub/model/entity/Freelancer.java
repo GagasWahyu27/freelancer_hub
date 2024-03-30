@@ -1,7 +1,6 @@
 package com.freelance.hub.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.freelance.hub.constant.ECategory;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

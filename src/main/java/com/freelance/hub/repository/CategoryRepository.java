@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -16,6 +15,6 @@ public interface CategoryRepository extends JpaRepository<Category, String> {
     Optional<Category> findByName(ECategory category);
 
     @Modifying
-    @Query(value = "INSERT INTO category (category_id, name) VALUES (?1, ?2)", nativeQuery = true)
+    @Query(value = "INSERT INTO category (name) VALUES (?1)", nativeQuery = true)
     void saveAllAndFlush(String id, ECategory name);
 }

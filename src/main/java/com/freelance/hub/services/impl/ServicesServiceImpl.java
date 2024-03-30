@@ -32,7 +32,6 @@ public class ServicesServiceImpl implements ServicesService {
                     services.getFreelancer().getId()
             );
         } else {
-            // Handle jika Freelancer null
             throw new IllegalArgumentException("Freelancer cannot be null");
         }
     }
